@@ -8,7 +8,7 @@
     <ul>
       <volist name="result['rankNews']" id="vo" key="k">
       <li class="num{$k} curr">
-        <a target="_blank" href="/index.php?c=detail&id={$vo.news_id}">{$vo.small_title}</a>
+        <a target="_blank" href="./index.php?c=detail&id={$vo.news_id}">{$vo.small_title}</a>
         <if condition="$k eq 1">
         <div class="intro">
           {$vo.description}
@@ -20,7 +20,7 @@
   </div>
   <volist name="result['advNews']" id="vo" key="k">
   <div class="right-hot">
-    <a target="_blank" href="{$vo.url}"><img src="{$vo.thumb}" alt="{$vo.name}"></a>
+    <a target="_blank" href=".{$vo.url}"><img src=".{$vo.thumb}" alt="{$vo.name}"></a>
   </div>
   </volist>
 </div>

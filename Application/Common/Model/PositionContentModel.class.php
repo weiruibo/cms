@@ -24,6 +24,7 @@ class PositionContentModel extends Model {
 		}
 		$list = $this->_db->select();
 		//echo $this->_db->getLastSql();exit;
+
 		return $list;
 	}
 
