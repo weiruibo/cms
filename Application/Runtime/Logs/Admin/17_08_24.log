@@ -1,0 +1,539 @@
+[ 2017-08-24T00:56:03+08:00 ] ::1 /cms/admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-08-24T00:56:04+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-08-24T01:20:27+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-08-24T01:20:28+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-08-24T01:21:08+08:00 ] ::1 /cms/admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001763s ]
+
+[ 2017-08-24T01:21:56+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [8] Undefined index: news_id /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 68 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0019s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('美军舰为何频撞船?专家：数量多 太蛮横 长时间海外部署','美军舰撞船','/upload/2017/08/24/599db984166bc.jpg','#5674ed','12','2','美军舰撞船','美国 军舰','1503508916','admin') [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsContentModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0016s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;央视网消息：&lt;/strong&gt;美国海军“麦凯恩”号导弹驱逐舰当地时间21号早上在新加坡附近海域与一艘商船相撞，事故造成10名美国船员失踪，另有5人受伤。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	22号，美国海军太平洋舰队司令斯科特·斯威夫特在新加坡就美军舰撞船事件召开新闻发布会,表示部分失踪船员的尸体残骸已经被发现，美军将彻查事故原因。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	斯科特·斯威夫特表示，在拖船的协助下，“麦凯恩”号已经抵达新加坡樟宜附近的海军基地，潜水员在船体中找到了部分失踪的美军船员尸体残骸。
+&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;img src=&quot;http://p1.img.cctvpic.com/photoworkspace/contentimg/2017/08/23/2017082311352813188.jpg&quot; alt=&quot;&quot; width=&quot;550&quot; /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;美国海军太平洋舰队司令 斯科特·斯威夫特：&lt;/strong&gt;美国海军和海军陆战队的潜水员今天（22号）进行了搜救活动，潜水员进入到了“麦凯恩”号被撞毁的船舱里，潜水员在这些封闭的船舱中找到了一些尸体残骸。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	斯威夫特说，搜救还将继续进行，马来西亚以及新加坡的海军都参与到了搜救工作当中。马来西亚海军此前报道称，他们也找到了一具尸体，美国海军正在调查这具尸体是否是10名失踪美军船员之一。此外，4名受伤船员在21号就立刻被新加坡海军直升机救起，并送往当地医院。另一名受伤船员在“麦凯恩”号驱逐舰抵达港口后被送往医院，5名伤员没有生命危险。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;美海军官员：将对事故进行彻查&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	此次撞船事故是两个多月以来美国海军第七舰队在太平洋海域发生的第二次撞船事故。6月17号，美军“菲茨杰拉德”号驱逐舰在日本横须贺港水域同一艘菲律宾籍货船发生撞击，导致7名水兵丧生，包括舰长在内的3人受伤。对于美军第七舰队接连发生撞船事故及其背后的原因，在22号的发布会上，斯威夫特表示，美军将彻查此类事故的根源，并找到解决方法。
+&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;img src=&quot;http://p1.img.cctvpic.com/photoworkspace/contentimg/2017/08/23/2017082311352818904.jpg&quot; alt=&quot;&quot; width=&quot;550&quot; /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;美国海军太平洋舰队司令 斯科特·斯威夫特：&lt;/strong&gt;根据我今天（22日）对“麦凯恩”号（受损情况）的视察，我可以告诉你船体左舷尾部受损严重，进水情况已经停止，但是受损程度仍需评估。美国海军将对撞船事故进行全面彻底的调查，以确定到底发生了什么以及如何发生的。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;美海军官员：太平洋舰队将重新部署&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	22号，就目前已被暂停行动的美国海军舰队是否有接下来的动作，美国海军太平洋舰队司令斯科特·斯威夫特表示，太平洋舰队未来将进行重新部署。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	鉴于近期美海军舰只接连发生与其他船只相撞事故，美国海军作战部长约翰·理查森21号已下令暂停全球范围内所有美海军舰队的行动，并对海军第七舰队的运作进行全面审查。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	美国海军太平洋舰队司令斯威夫特在22号的发布会上表示，他于当天早些时候和理查森在电话中对太平洋舰队面临的情况以及解决方案进行了讨论，太平洋舰队未来将进行重新部署。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;美国海军太平洋舰队司令 斯科特·斯威夫特：&lt;/strong&gt;所有太平洋舰队的行动暂停，将在8月28日前结束。与此同时，我命令太平洋区域内所有军舰进入第二阶段 ，第二阶段要求所有的船只重新检查各种隐患，包括巡航，船只的机械系统以及驾驶台系统。这项检查会由一个专家团队进行，还会有新的训练和评估。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;专家解读：美军舰为何频繁犯“低级”错误？&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	作为全球实力最强的美国海军，在两个多月内连续发生两次有美军伤亡的撞船事故，实在令人匪夷所思。设备如此先进的驱逐舰为何会频繁在亚太海域出现撞船事故呢？
+&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;img src=&quot;http://p1.img.cctvpic.com/photoworkspace/contentimg/2017/08/23/2017082311352865909.jpg&quot; alt=&quot;&quot; width=&quot;550&quot; /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;军事专家 杜文龙：&lt;/strong&gt;美国海军之所以频繁出现这种事故，我认为有几种原因：&lt;strong&gt;第一是数量太多&lt;/strong&gt;。美国在海外布置的作战舰艇有100多艘，在亚太有55艘，密度的提高导致出事的概率提升；&lt;strong&gt;第二，太蛮横。&lt;/strong&gt;美军的“自由航行”无视海上规则，要求美国优先，其他舰艇船只要主动让路。这点在很多海域得到的基本上没有经验，只有教训；&lt;strong&gt;第三，在长时间部署海外的航行过程中美国海军过于疲惫，以致害人害己。&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;strong&gt;俄专家：美海军正成为国际航运威胁&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	对于此次“麦凯恩”号驱逐舰与商船相撞事件，有俄罗斯专家认为，美国海军热衷于在全球展示武力，并正在成为国际航运的威胁。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	今日俄罗斯通讯社政治观察家赫罗连科22号撰文指出，从美国海军撞船的历史统计来看，相关事件的发生与所谓的“美国例外论”不无关系。美国漠视国际规则，因此美国军舰屡屡撞上其他国家船只，看起来就成了“合理”的事情。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	除了屡屡撞船，对于其他国家的领海和海军船只，美国也是经常打着“航行自由”的旗帜抵近侦察，展示武力。美国海军的类似行为正在成为国际航运的威胁，给海上民用船只的安全带来严峻考验。
+&lt;/p&gt;','36','1503508916') [ RunTime:0.0006s ]
+
+[ 2017-08-24T01:21:57+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-08-24T01:22:04+08:00 ] ::1 /cms/admin.php?c=content&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0022s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=35 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_news` SET `listorder`='4' WHERE ( news_id=27 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='2' WHERE ( news_id=31 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='1' WHERE ( news_id=30 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=36 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=34 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=33 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=28 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=26 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=25 ) [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:22:05+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-08-24T01:22:14+08:00 ] ::1 /cms/admin.php?c=content&a=push
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('36')  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/PositionContentModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0012s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','美军舰为何频撞船?专家：数量多 太蛮横 长时间海外部署','/upload/2017/08/24/599db984166bc.jpg','36','1','1503508916') [ RunTime:0.0002s ]
+
+[ 2017-08-24T01:22:15+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-08-24T01:22:16+08:00 ] ::1 /cms/admin.php?c=positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-08-24T01:23:35+08:00 ] ::1 /cms/admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-08-24T01:23:36+08:00 ] ::1 /cms/admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-08-24T01:23:37+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-08-24T01:23:38+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-08-24T01:24:04+08:00 ] ::1 /cms/admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-08-24T01:24:36+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+
+[ 2017-08-24T01:24:41+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [8] Undefined index: news_id /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 68 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0015s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('魏祥带着妈妈上清华：招生制度和资助政策是保障','他，为什么能“带着妈妈上清华”？','/upload/2017/08/24/599dba3458bc1.jpg','#5674ed','12','2','','清华','1503509081','admin') [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsContentModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('&lt;p align=&quot;center&quot; style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	&lt;img src=&quot;http://p1.img.cctvpic.com/photoworkspace/contentimg/2017/08/23/2017082319053464366.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/p&gt;
+&lt;p class=&quot;pictext&quot; align=&quot;center&quot; style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	8月23日，魏祥（坐轮椅者）在办理新生注册工作。新华社发
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	新华社北京8月23日电（记者孙琪　张文静）8月23日，是清华大学新生入学报到的日子，近3800名来自世界各地的2017级新生来到清华大学报到，在这里开启一段人生新旅程。数千名清华新生中，有一位新生牵动着人们的关注——来自甘肃省定西市的清华新生魏祥。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	2017年6月，网络上《一位甘肃高分考生的请求》一文引起舆论热议。发出请求的甘肃考生魏祥，在高考中取得了648分的好成绩，但他因先天性脊柱裂、椎管内囊肿疾病，需要长期依靠轮椅生活。在信中，他表示希望能够带着妈妈一起来清华大学读书。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	最终，魏祥通过“自强计划”顺利被清华大学数理类专业录取。在新生报到现场，魏祥和母亲夏瑞云在辅导员和志愿者的陪同下完成了注册。坐在轮椅上的魏祥精神抖擞，笑容满面，参观校园的过程中难掩脸上的欣喜。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	魏祥能够梦圆清华，来自清华大学招生制度和资助政策的坚实保障。2011年，清华大学通过组织“自强计划”、国家专项计划以及合理调整分省招生计划等多项措施，逐年向高等教育欠发达且生源数量相对较多、升学压力较大的中西部地区和农村地区倾斜。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	记者采访了解到，和魏祥一样，通过“自强计划”和国家专项计划走出贫困、获得教育机会的还有被清华大学机械、航空与动力类专业录取的河北吴桥中学庞众望、云南省西双版纳州第一中学的哈尼族男孩周睿杨……2017年，清华大学共通过“自强计划”和国家专项计划录取考生352名，占总招生规模的10.5%，创下了“自强计划”和国家专项计划实施以来的新高。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	对于这些经济困难的学生来说，上学解决了，生活怎么办？清华大学学生部副部长贾曦告诉记者，早在1998年，清华大学就在全国高校率先开设了新生入学“绿色通道”，至今已经是第20个年头。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	“对被录取入学且家庭经济困难的新生，学校一律先办理入学手续，再根据核实后的情况，分别采取不同办法予以资助。20年间制度不断完善，不但将支持范围从学费、住宿费扩大到生活费、来校路费，还将覆盖人群从新生扩大到高年级学生。”贾曦说，“20年来共有5294名学生借款3326.72万元。我们绝不让一名学生因家庭经济困难而失去学习机会。”
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	清华大学物业管理中心主任向春介绍，魏祥和其母亲夏瑞云于8月22日抵达北京，已经入住了学生宿舍。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;font-family:Arial, 宋体;color:#333333;background-color:#FFFFFF;&quot;&gt;
+	在留学生公寓一层，记者看到，学校将宿舍的一部分改造成了可供夏瑞云母子居住的套间。套间虽然只有约20平方米，却包含两间卧室、一间卫生间、一间厨房，屋内设施也经过无障碍改造，房间干净而温馨。
+&lt;/p&gt;','37','1503509081') [ RunTime:0.0004s ]
+
+[ 2017-08-24T01:24:42+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-08-24T01:24:57+08:00 ] ::1 /cms/admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+
+[ 2017-08-24T01:24:57+08:00 ] ::1 /cms/admin.php?c=content&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0020s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=25 ) [ RunTime:0.0005s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=22 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=21 ) [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:24:58+08:00 ] ::1 /cms/admin.php?m=Admin&c=Content&a=index&p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-08-24T01:25:08+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-08-24T01:25:17+08:00 ] ::1 /cms/admin.php?c=content&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0022s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=36 ) [ RunTime:0.0003s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=35 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='4' WHERE ( news_id=27 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='2' WHERE ( news_id=31 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='1' WHERE ( news_id=30 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=37 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=34 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=33 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=28 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=26 ) [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:25:18+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-08-24T01:25:24+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2017-08-24T01:27:06+08:00 ] ::1 /cms/admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-08-24T01:27:11+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [8] Undefined index: news_id /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 68 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0016s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('乐视汽车人事变动：张海亮任副董事长兼CEO','乐视汽车人事变动','/upload/2017/08/24/599dbaea91881.png','#5674ed','8','3','','乐视','1503509231','admin') [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsContentModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0010s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	网易科技讯8月23日消息，昨日乐视汽车发布公告宣布两项高层人事调整：张海亮任乐视汽车副董事长兼CEO，高景深任LeSEE乐视汽车中国COO。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	&lt;b&gt;以下为人事变动原文：&lt;/b&gt;
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	乐视汽车人事调整：张海亮任副董事长兼CEO，高景深任中国COO
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	8月22日，乐视汽车宣布两项高层人事调整：张海亮任乐视汽车副董事长兼CEO，高景深任LeSEE乐视汽车中国COO。以上人事任命自即日起生效。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	公司正值战略落地的关键阶段，为了加强乐视汽车中国区从战略目标到经营达成的闭环管理，快速提升公司内部经营效率，经公司董事会审批决定：
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	任命张海亮为乐视汽车副董事长兼CEO，负责顶层战略制定及业务整体规划。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	任命高景深为LeSEE乐视汽车中国COO，全面参与设计并管理乐视汽车中国区年度经营计划、预算及组织规划，完善经营管理体系，健全各项管理制度，实现年度组织绩效的目标达成；协助LeSEE乐视汽车CEO共同建立和实施从战略到经营再到绩效的闭环管理体系；推动公司整体经营计划落地，向LeSEE乐视汽车中国CEO汇报。
+&lt;/p&gt;','38','1503509231') [ RunTime:0.0007s ]
+
+[ 2017-08-24T01:27:12+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-08-24T01:27:28+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-08-24T01:27:37+08:00 ] ::1 /cms/admin.php?c=content&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0021s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=37 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=36 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=35 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='4' WHERE ( news_id=27 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='2' WHERE ( news_id=31 ) [ RunTime:0.0011s ]
+SQL: UPDATE `cms_news` SET `listorder`='1' WHERE ( news_id=30 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=38 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=34 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=33 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=28 ) [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:27:38+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-08-24T01:27:42+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-08-24T01:28:13+08:00 ] ::1 /cms/admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-08-24T01:28:39+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [8] Undefined index: news_id /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 68 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0016s ]
+SQL: INSERT INTO `cms_news` (`title`,`small_title`,`thumb`,`title_font_color`,`catid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('武进区启用无人机巡查交通干线沿线环境','武进区启用无人机巡查交通干线沿线环境','/upload/2017/08/24/599dbb2d9e500.jpg','#ed568b','8','3','','无人机','1503509319','admin') [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsContentModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0009s ]
+SQL: INSERT INTO `cms_news_content` (`content`,`news_id`,`create_time`) VALUES ('&lt;p class=&quot;f_center&quot; style=&quot;font-size:16px;font-family:&amp;quot;color:#404040;text-align:center;background-color:#FFFFFF;&quot;&gt;
+	&lt;img src=&quot;http://cms-bucket.nosdn.127.net/6300fdd61ce346eca105a580dfcd3f1920170823094903.jpeg?imageView&amp;amp;thumbnail=550x0&quot; alt=&quot;资料图:无人机&quot; /&gt;&lt;br /&gt;
+资料图:无人机
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	武进新闻网讯 (何秋斌 记者 俞兢) 8月21日，武进公路处一架四轴无人机首次应用到交通干线沿线环境综合整治中，对国省干线公路桥下隐蔽部位、高速公路沿线绿化带等进行巡查，及时发现和处置“脏乱差”风险点。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	据了解，交通干线沿线环境综合整治五项行动启动以来，武进公路部门围绕路面、用地范围和建筑控制区内“八无”要求，不断加大对辖区G312、S232、S342、S239、S230、S340等道路的路政执法和巡查力度，及时查处纠正各类涉路违法行为，清理规范沿线公路设施，干线公路沿线环境进一步好转。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	然而，人工巡查存在不少盲区，特别是高速公路绿化带和干线公路桥梁隐蔽部位，路政人员很难近距离观察。加上高速公路全线封闭，来回绕路较远，巡查费时费力。使用无人机巡查对桥下空间进行拍照、录像，消除了监控死角，大大节约了巡查时间，提升了巡查效率。首次使用无人机巡查，公路部门就发现了辖区国省干线3处环境“脏乱差”风险点，目前已反馈给养护单位进行整改。
+&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;text-indent:2em;font-family:&amp;quot;color:#404040;text-align:justify;background-color:#FFFFFF;&quot;&gt;
+	下一步，该处将继续利用无人机开展整治工作巡查和督查，及时发现处置环境脏乱点，促进交通干线沿线环境提升改善。
+&lt;/p&gt;','39','1503509319') [ RunTime:0.0005s ]
+
+[ 2017-08-24T01:28:40+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-08-24T01:28:46+08:00 ] ::1 /cms/admin.php?c=content&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0009s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=38 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=37 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=36 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=35 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='4' WHERE ( news_id=27 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='2' WHERE ( news_id=31 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='1' WHERE ( news_id=30 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_news` SET `listorder`='10' WHERE ( news_id=39 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=34 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_news` SET `listorder`='0' WHERE ( news_id=33 ) [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:28:47+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-08-24T01:29:01+08:00 ] ::1 /cms/admin.php?c=content&a=push
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `cms_news` WHERE `news_id` IN ('39','38','37')  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/PositionContentModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0015s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','魏祥带着妈妈上清华：招生制度和资助政策是保障','/upload/2017/08/24/599dba3458bc1.jpg','37','1','1503509081') [ RunTime:0.0002s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','乐视汽车人事变动：张海亮任副董事长兼CEO','/upload/2017/08/24/599dbaea91881.png','38','1','1503509231') [ RunTime:0.0001s ]
+SQL: INSERT INTO `cms_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','武进区启用无人机巡查交通干线沿线环境','/upload/2017/08/24/599dbb2d9e500.jpg','39','1','1503509319') [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:29:01+08:00 ] ::1 /cms/admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-08-24T01:29:02+08:00 ] ::1 /cms/admin.php?c=positioncontent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-08-24T01:29:05+08:00 ] ::1 /cms/admin.php?position_id=3&c=positioncontent&a=index&title=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-08-24T01:29:14+08:00 ] ::1 /cms/admin.php?c=positioncontent&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/PositioncontentController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Common\Model\PositionContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/PositionContentModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `cms_position_content` [ RunTime:0.0020s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=29 ) [ RunTime:0.0002s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=79 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=78 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=77 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=73 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=72 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=65 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=64 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=54 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=52 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=51 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=50 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=49 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=31 ) [ RunTime:0.0001s ]
+SQL: UPDATE `cms_position_content` SET `listorder`='0' WHERE ( id=30 ) [ RunTime:0.0001s ]
+
+[ 2017-08-24T01:29:15+08:00 ] ::1 /cms/admin.php?position_id=3&c=positioncontent&a=index&title=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
