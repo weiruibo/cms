@@ -21,9 +21,7 @@
                 <li><a href="."
                     <?php if($result['catId'] == 0): ?>class="curr"<?php endif; ?>
                     >首页</a></li>
-                <?php if(is_array($result['navs'])): foreach($result['navs'] as $key=>$vo): echo ($vo); ?>
-                    <li><a href="./index.php?c=cat&id=<?php echo ($vo["menu_id"]); ?>"
-                    ><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; ?>
+                <?php if(is_array($result['navs'])): foreach($result['navs'] as $key=>$nav): ?><li><a href="./index.php?c=cat&a=index&id=<?php echo ($nav["menu_id"]); ?>" <?php if($nav['menu_id'] == $result['catId']): ?>class='curr'<?php endif; ?>><?php echo ($nav["name"]); ?></a></li><?php endforeach; endif; ?>
             </ul>
         </div>
     </div>

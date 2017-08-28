@@ -1,0 +1,28 @@
+[ 2017-08-26T11:54:39+08:00 ] ::1 /cms/admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-26T12:00:13+08:00 ] ::1 /cms/admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1503720013' WHERE ( admin_id=1 ) [ RunTime:0.0002s ]
+
+[ 2017-08-26T12:00:32+08:00 ] ::1 /cms/admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Admin/Controller/ContentController.class.php 第 15 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0024s ]
+SQL: UPDATE `cms_news` SET `title`='天天',`small_title`='他',`thumb`='/upload/2017/08/26/59a0f25c407cb.jpg',`title_font_color`='#5674ed',`catid`='3',`copyfrom`='0',`description`='去',`keywords`='是' WHERE ( news_id=27 ) [ RunTime:0.0034s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) /Applications/XAMPP/xamppfiles/htdocs/cms/Application/Common/Model/NewsContentModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `cms_news_content` [ RunTime:0.0008s ]
+SQL: UPDATE `cms_news_content` SET `content`='我' WHERE ( news_id=27 ) [ RunTime:0.0001s ]
+

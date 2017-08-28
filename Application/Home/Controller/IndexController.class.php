@@ -15,15 +15,15 @@ class IndexController extends CommonController
         //获取排行
         $rankNews = $this->getRank();
         // 获取首页大图数据
-        $topPicNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 2, 'thumb' => array('neq', " ")), 1);
+        $topPicNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 2, 'thumb' => array('neq', "")), 1);
         // 首页3小图推荐
-        $topSmailNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 3, 'thumb' => array('neq', " ")), 3);
-        $listNews = D("News")->select(array('status' => 1, 'thumb' => array('neq', '')), 30);
+        $topSmailNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 3, 'thumb' => array('neq', "")), 3);
+        $listNews = D("News")->select(array('status' => 1, 'thumb' => array('neq', '')), 5);
 
-        $advNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 5), 2);
+        $advNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 5), 1);
         $this->assign('result', array(
-            'config'=>$config,
-            'navs'=>$navs,
+            'config' => $config,
+            'navs' => $navs,
             'topPicNews' => $topPicNews,
             'topSmailNews' => $topSmailNews,
             'listNews' => $listNews,
@@ -35,7 +35,7 @@ class IndexController extends CommonController
         /**
          * 生成页面静态化
          */
-            $this->display();
+        $this->display();
     }
 
     public function build_html()
@@ -58,28 +58,70 @@ class IndexController extends CommonController
 
     }
 
+//    public function getCount()
+//    {
+//        if (!$_POST) {
+//            return show(0, '没有任何内容');
+//        }
+//
+//        $newsIds = array_unique($_POST);
+//
+//        try {
+//            $list = D("News")->getNewsByNewsIdIn($newsIds);
+//        } catch (Exception $e) {
+//            return show(0, $e->getMessage());
+//        }
+//
+//        if (!$list) {
+//            return show(0, 'notdataa');
+//        }
+//
+//        $data = array();
+//        foreach ($list as $k => $v) {
+//            $data[$v['news_id']] = $v['count'];
+//        }
+//        return show(1, 'success', $data);
+//    }
     public function getCount()
     {
+//        print_r($_POST);
+
         if (!$_POST) {
-            return show(0, '没有任何内容');
+            return show(0, '无内容');
         }
 
-        $newsIds = array_unique($_POST);
-
-        try {
-            $list = D("News")->getNewsByNewsIdIn($newsIds);
-        } catch (Exception $e) {
-            return show(0, $e->getMessage());
-        }
-
-        if (!$list) {
-            return show(0, 'notdataa');
-        }
+        $news_id = array_unique($_POST);
+//        print_r($news_id);
 
         $data = array();
-        foreach ($list as $k => $v) {
-            $data[$v['news_id']] = $v['count'];
+        $error = array();
+        $res = array();
+        foreach ($news_id as $k) {
+
+            $result = D('News')->find($k);
+            $data[] = $result;
+//            print_r($result);
+            if (!$result) {
+                $error[] = $k;
+            }
         }
-        return show(1, 'success', $data);
+
+        if ($error) {
+//            print_r($error);
+            return show(0, '数据有误');
+        }
+
+//        print_r($data);
+
+        foreach ($data as $k => $v) {
+//            print_r($v);
+
+            $res[$v['news_id']] = $v['count'];
+        }
+
+//        print_r($res);
+
+        return show(1,'success',$res);
     }
+
 }

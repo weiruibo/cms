@@ -8,4 +8,5 @@ return array(
     'LOAD_EXT_CONFIG' => 'db',
     'MD5_PRE' => 'sing_cms',
     'HTML_FILE_SUFFIX' => '.html',
+    'show_PAGE_TRACE'=>true,
 );

@@ -35,7 +35,8 @@
                         <div class="banner-info"><span>阅读数</span><i
                                 class="news_count node-<?php echo ($result['topPicNews'][0]['news_id']); ?>"
                                 news-id="<?php echo ($result['topPicNews'][0]['news_id']); ?>"
-                                id="node-<?php echo ($result['topPicNews'][0]['news_id']); ?>"></i></div>
+                                id="node-<?php echo ($result['topPicNews'][0]['news_id']); ?>"></i>
+                        </div>
                         <a target="_blank" href="./index.php?c=detail&id=<?php echo ($result['topPicNews'][0]['news_id']); ?>"><img
                                 width="670" height="360" src=".<?php echo ($result['topPicNews'][0]['thumb']); ?>" alt=""></a>
                     </div>
@@ -97,5 +98,9 @@
 </section>
 </body>
 <script src="/cms/Public/js/jquery.js"></script>
-<!--<script src="/cms/Public/js/count.js"></script>-->
+<script src="/cms/Public/js/dialog.js"></script>
+<script src="/cms/Public/js/dialog/layer.js"></script>
+<script src="/cms/Public/js/count1.js"></script>
+<script>
+</script>
 </html>

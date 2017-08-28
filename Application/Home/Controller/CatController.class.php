@@ -15,41 +15,30 @@ class CatController extends CommonController
         if (!$id) {
             return $this->error('ID不存在');
         }
-//
-//        $nav = D("Menu")->find($id);
-//        if (!$nav || $nav['status'] != 1) {
-//            return $this->error('栏目id不存在或者状态不为正常');
-//        }
         $advNews = D("PositionContent")->select(array('status' => 1, 'position_id' => 5), 2);
         $rankNews = $this->getRank();
-//
-//        $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
-//        $pageSize = 20;
-//        $conds = array(
-//            'status' => 1,
-//            'thumb' => array('neq', ''),
-//            'catid' => $id,
-//        );
-//        $news = D("News")->getNews($conds, $page, $pageSize);
-//        $count = D("News")->getNewsCount($conds);
-//
-//        $res = new \Think\Page($count, $pageSize);
-//        $pageres = $res->show();
-////
-//        $this->assign('result', array(
-//            'advNews' => $advNews,
-//            'rankNews' => $rankNews,
-//            'catId' => $id,
-//            'listNews' => $news,
-//            'pageres' => $pageres,
-//        ));
 
+
+        $p = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
+        $pageSize = $_REQUEST['pageSize'] ? $_REQUEST['pageSize'] : 3;
+
+        $newList = D('News')->getNews(array('catid' => $id), $p, $pageSize);
+        $pageCount = D('News')->getNewsCount(array('catid' => $id));
+
+
+        $page = new \Think\Page($pageCount, $pageSize);
+        $show = $page->show();
+
+
+//        print_r($newList);
         $this->assign('result', array(
                 'config' => $config,
                 'navs' => $navs,
                 'catId' => $id,
                 'advNews' => $advNews,
                 'rankNews' => $rankNews,
+                'newsList' => $newList,
+                'pageShow' => $show,
             )
         );
 
