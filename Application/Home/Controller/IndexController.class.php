@@ -35,28 +35,34 @@ class IndexController extends CommonController
         /**
          * 生成页面静态化
          */
-        $this->display();
+//        if ($type = 'buildHtml') {
+//            $this->buildHtml('index', './', 'Index/index');
+//        }else{
+            $this->display();
+//        }
+
+
     }
 
-    public function build_html()
+    public function buildHtml()
     {
         $this->index('buildHtml');
         return show(1, '首页缓存生成成功');
     }
 
-
-    public function crontab_build_html()
-    {
-        if (APP_CRONTAB != 1) {
-            die("the_file_must_exec_crontab");
-        }
-        $result = D("Basic")->select();
-        if (!$result['cacheindex']) {
-            die('系统没有设置开启自动生成首页缓存的内容');
-        }
-        $this->index('buildHtml');
-
-    }
+//
+//    public function crontab_build_html()
+//    {
+//        if (APP_CRONTAB != 1) {
+//            die("the_file_must_exec_crontab");
+//        }
+//        $result = D("Basic")->select();
+//        if (!$result['cacheindex']) {
+//            die('系统没有设置开启自动生成首页缓存的内容');
+//        }
+//        $this->index('buildHtml');
+//
+//    }
 
 //    public function getCount()
 //    {
@@ -121,7 +127,7 @@ class IndexController extends CommonController
 
 //        print_r($res);
 
-        return show(1,'success',$res);
+        return show(1, 'success', $res);
     }
 
 }

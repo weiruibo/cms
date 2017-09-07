@@ -127,13 +127,13 @@
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label for="inputPassword3" class="col-sm-2 control-label">是否自动生成首页缓存:</label>
-						<div class="col-sm-5">
-							<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1" <?php if($vo['cacheindex'] == 1): ?>checked<?php endif; ?>> 是
-                            <input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0" <?php if($vo['cacheindex'] == 0): ?>checked<?php endif; ?>> 否
-						</div>
-					</div>
+					<!--<div class="form-group">-->
+						<!--<label for="inputPassword3" class="col-sm-2 control-label">是否自动生成首页缓存:</label>-->
+						<!--<div class="col-sm-5">-->
+							<!--<input type="radio" name="cacheindex" id="optionsRadiosInline1" value="1" <?php if($vo['cacheindex'] == 1): ?>checked<?php endif; ?>> 是-->
+                            <!--<input type="radio" name="cacheindex" id="optionsRadiosInline2" value="0" <?php if($vo['cacheindex'] == 0): ?>checked<?php endif; ?>> 否-->
+						<!--</div>-->
+					<!--</div>-->
 
 
 					<div class="form-group">

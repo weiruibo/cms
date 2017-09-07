@@ -38,8 +38,8 @@
 <script>
   $("#cache-index").click(function(){
 
-	var url = 'index.php?c=index&a=build_html';
-	var jump_url = '/admin.php?c=basic&a=cache';
+	var url = './index.php?c=index&a=buildHtml';
+	var jump_url = './admin.php?c=basic&a=cache';
 	var postData = {};
 
 	$.post(url, postData,function(result){
